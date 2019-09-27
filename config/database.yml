@@ -10,7 +10,6 @@ development:
   database: rubyBlog_dev
   username: peperoncino
   encoding: unicode
-  host: localhost
   pool: 5
   
 test:
@@ -18,7 +17,6 @@ test:
   database: rubyBlog_test
   username: peperoncino
   encoding: unicode
-  host: localhost
   pool: 5
 
 production:
