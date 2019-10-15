@@ -1,2 +1,10 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+<% if user_signed_in? %>
+    <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
+    
+    <h1>Hello, Rails!</h1>
+    <%= link_to 'My Blog', controller: 'articles' %>
+
+<% else %>
+    <%= link_to 'log in', new_user_session_path %> или <%= link_to 'Sing in', new_user_registration_path %>
+<% end %>
+
